@@ -1,0 +1,447 @@
+/* ===== Configuración general ===== */
+@font-face {
+    font-family: "MiFuente";
+    src: url("fuente.ttf");
+}
+
+body {
+    font-family: "MiFuente", Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+p {
+    color: #cccccc;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #999999;
+}
+
+/* ===== Portada ===== */
+#portada {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#portada h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#portada img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+    margin-bottom: 25px;
+}
+
+/* ===== Menú ===== */
+#menu {
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-right: 1px solid #2a2a2a;
+    height: 100vh;
+}
+
+#menu h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #2a2a2a;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    margin: 12px 0;
+}
+
+#menu a {
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+#menu a:hover {
+    background: #2a2a2a;
+    color: #ffffff;
+}
+
+/* ===== Contenido en iframe ===== */
+iframe {
+    width: 100%;
+    height: 80vh;
+    border: none;
+    border-radius: 12px;
+    background: #1a1a1a;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    margin: 20px 0;
+}
+
+/* ===== Acercamiento a la IA (ia1) ===== */
+#ia1 {
+    padding: 40px 20px;
+    background: #121212;
+    color: #e0e0e0;
+}
+
+#ia1 h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 25px;
+    position: relative;
+}
+#ia1 h2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin: 12px auto 0;
+    background: linear-gradient(90deg, #444, #777);
+    border-radius: 2px;
+}
+
+#ia1 p {
+    text-align: justify;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: #cccccc;
+}
+
+#ia1 .imagenes {
+    text-align: center;
+    margin: 30px 0;
+}
+#ia1 .imagenes img {
+    max-width: 40%;
+    margin: 10px;
+    border-radius: 12px;
+    border: 2px solid #333;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+#ia1 .imagenes img:hover {
+    transform: scale(1.05);
+}
+
+#ia1 table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#ia1 th, #ia1 td {
+    border: 1px solid #2a2a2a;
+    padding: 12px;
+}
+#ia1 th {
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+}
+#ia1 td {
+    color: #dddddd;
+    vertical-align: top;
+}
+#ia1 caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+/* ===== Aplicaciones sectoriales (ia2) ===== */
+#ia2 {
+    padding: 40px 20px;
+    background: #121212;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+#ia2 h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    position: relative;
+}
+#ia2 h2::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 3px;
+    margin: 12px auto 0;
+    background: linear-gradient(90deg, #444, #777);
+    border-radius: 2px;
+}
+
+#ia2 h3 {
+    color: #ffffff;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    border-left: 4px solid #777;
+    padding-left: 10px;
+    text-align: left;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ia2 p {
+    text-align: justify;
+    line-height: 1.7;
+    max-width: 900px;
+    margin: 10px auto;
+    color: #cccccc;
+}
+
+#ia2 strong {
+    color: #ffffff;
+}
+
+#ia2 .imagen {
+    margin: 20px 0 40px 0;
+}
+#ia2 .imagen img {
+    max-width: 70%;
+    border-radius: 12px;
+    border: 2px solid #333;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+#ia2 .imagen img:hover {
+    transform: scale(1.03);
+}
+
+/* ===== Innovación y Desarrollo (ia3) ===== */
+#ia3 {
+    background: #121212;
+    color: #e0e0e0;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#ia3 h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    position: relative;
+}
+#ia3 h2::after {
+    content: "";
+    display: block;
+    width: 140px;
+    height: 3px;
+    margin: 12px auto 0;
+    background: linear-gradient(90deg, #444, #777);
+    border-radius: 2px;
+}
+
+#ia3 .intro {
+    max-width: 900px;
+    margin: 0 auto 30px;
+    text-align: justify;
+    color: #cccccc;
+    line-height: 1.7;
+}
+
+#ia3 .card {
+    background: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 900px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+#ia3 .card:hover {
+    transform: translateY(-4px);
+}
+
+#ia3 .card h3 {
+    background: #333;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin: -20px -20px 15px -20px;
+    text-align: center;
+}
+
+#ia3 .card p {
+    line-height: 1.6;
+    text-align: justify;
+    margin: 10px 0;
+    color: #cccccc;
+}
+#ia3 strong {
+    color: #ffffff;
+}
+
+#ia3 .imagen {
+    text-align: center;
+    margin-top: 15px;
+}
+#ia3 .imagen img {
+    max-width: 70%;
+    border-radius: 10px;
+    border: 2px solid #333;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+#ia3 .imagen img:hover {
+    transform: scale(1.03);
+}
+
+/* ===== Impacto social y ético (ia4) ===== */
+#ia4 {
+    background: #121212;
+    color: #e0e0e0;
+    padding: 40px 20px;
+}
+
+#ia4 h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+#ia4 h2::after {
+    content: "";
+    display: block;
+    width: 160px;
+    height: 3px;
+    margin: 12px auto 0;
+    background: linear-gradient(90deg, #444, #777);
+    border-radius: 2px;
+}
+
+#ia4 .intro {
+    max-width: 900px;
+    margin: 0 auto 35px;
+    text-align: justify;
+    line-height: 1.7;
+    color: #cccccc;
+}
+
+#ia4 .card {
+    background: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    margin: 25px auto;
+    padding: 20px;
+    max-width: 900px;
+    transition: transform 0.3s ease;
+}
+#ia4 .card:hover {
+    transform: translateY(-5px);
+}
+
+#ia4 .card h3 {
+    color: #ffffff;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #333;
+    padding-bottom: 8px;
+}
+
+#ia4 .card p {
+    line-height: 1.6;
+    text-align: justify;
+    margin: 8px 0;
+    color: #cccccc;
+}
+#ia4 strong {
+    color: #ffffff;
+}
+
+#ia4 .imagen {
+    text-align: center;
+    margin-top: 12px;
+    font-style: italic;
+    color: #777;
+    border: 1px dashed #444;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* ===== Formulario de contacto ===== */
+#formulario {
+    background: #1e1e1e;
+    padding: 40px 20px;
+    margin: 40px auto;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+#formulario h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+#formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #cccccc;
+}
+
+#formulario input,
+#formulario textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #2a2a2a;
+    color: #ffffff;
+}
+
+#formulario input:focus,
+#formulario textarea:focus {
+    outline: none;
+    background: #333;
+}
+
+#formulario button {
+    padding: 12px;
+    background: #444;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#formulario button:hover {
+    background: #666;
+}
